@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posição dos Fundos</title>
+    <style>
+        div.bloco{
+            /*Iamagem de fundo*/
+            background-image:url('imagens/wallpaper003.jpg') ;
+            /*Altura das Divs*/
+            height: 200px;
+            /*Borda nas Divs*/
+            border: 1px solid black;
+            /*Borda arredondada nas Divs*/
+            border-radius: 20px;
+            /*Margem nas Divs (para separar uma da outra)*/
+            margin: 10px;
+        }
+
+        div#q1{
+            /*Posição: Canto Superior Esquedo
+            ESSE É O PADRÃO*/
+            background-position: left top;
+        }
+
+        div#q2{
+            /*Posição: Centro Esquedo*/
+            background-position: left center;
+        }
+
+        div#q3{
+            /*Posição: Inferior direito*/
+            background-position: right bottom;
+        }
+
+        div#q4{
+            /*Posição: Centro Centro*/
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bloco" id="q1">
+
+    </div>
+    <div class="bloco" id="q2">
+
+    </div>
+    <div class="bloco" id="q3">
+
+    </div>
+    <div class="bloco" id="q4">
+
+    </div>
+</body>
+</html>
