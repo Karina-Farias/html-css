@@ -4,38 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
-
-            /*Altura total da View port 96% 
-            Altuta total da tela*/
+            
+            /*Altura total da View port 96% - Altuta total da tela*/
             height: 100vh;
-            /*Cor de fundo 
-            É IMPORTANTE COLOCAR MESMO SE FOR COLOCAR IMAGEM*/
-            background-color: black;
-            /*Imagem de Fundo*/
-            background-image: url('imagens/wallpaper002.jpg');
-            /*POSIÇÃO DA IMAGEM NA TELA/
-            background-position: center top;
-            /*SEM REPETIÇÃO - DA IMAGEM*/
-            background-repeat: no-repeat;
-            /*POSIÇÃO DA IMAGEM - ESPAÇO NA TELA QUE VAI OCUPAR
-            COVER: FAZ CORTES NA IMAGEM MAIS COBRE 100% DA VIEW*/
-            background-position: cover;
+
+            /*
+            PODE SER ASSIM:
+
+            Cor de fundo - É IMPORTANTE COLOCAR MESMO SE FOR COLOCAR IMAGEM
+            *background-color: black;*
+            Imagem de Fundo
+            *background-image: url('imagens/wallpaper002.jpg');*
+            POSIÇÃO DA IMAGEM NA TELA
+            *background-position: center top;*
+            SEM REPETIÇÃO - DA IMAGEM
+            *background-repeat: no-repeat;*
+            POSIÇÃO DA IMAGEM - ESPAÇO NA TELA QUE VAI OCUPAR -COVER: FAZ CORTES NA IMAGEM MAIS COBRE 100% DA VIEW
+            *background-position: cover;*
+            Fixa a imagem de fundo e a rolagem só funciona no conteúdo
+            *background-attachment: fixed;*
+            */
+            
+            /*
+            OU ASSIM:
+
+            COM Shorthand:
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+            
         }
          main{
 
             /*Cor de fundo do main*/
             background-color: white;
             /*Tamanho de largura do Main*/
-            width: 400px;
+            max-width: 400px;
             /*Espaçamento da Letra das bordas*/
             padding: 10px;
             /*Margem das letras*/
             margin: auto;
             /*Borda*/
-            border: 2px solid darkblue;
+            border: 1px solid darkblue;
             /*Borda Arredondada*/
             border-radius: 15px;
          }
@@ -44,6 +58,9 @@
 <body>
     <main>
         <h1>Teste de Imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, molestias architecto laudantium eaque similique saepe a sint consequuntur voluptate corrupti delectus exercitationem velit doloremque harum itaque praesentium incidunt, nulla totam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt officia, delectus rerum esse veritatis ipsam porro eaque pariatur aperiam eum illo, harum doloremque voluptatum nesciunt? Rerum at repellat eos molestias? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, quo perspiciatis! Optio minus nam officia officiis. Esse possimus sunt officiis nihil a unde illum? Error magnam architecto accusantium explicabo eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, molestias architecto laudantium eaque similique saepe a sint consequuntur voluptate corrupti delectus exercitationem velit doloremque harum itaque praesentium incidunt, nulla totam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt officia, delectus rerum esse veritatis ipsam porro eaque pariatur aperiam eum illo, harum doloremque voluptatum nesciunt? Rerum at repellat eos molestias? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, quo perspiciatis! Optio minus nam officia officiis. Esse possimus sunt officiis nihil a unde illum? Error magnam architecto accusantium explicabo eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, molestias architecto laudantium eaque similique saepe a sint consequuntur voluptate corrupti delectus exercitationem velit doloremque harum itaque praesentium incidunt, nulla totam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt officia, delectus rerum esse veritatis ipsam porro eaque pariatur aperiam eum illo, harum doloremque voluptatum nesciunt? Rerum at repellat eos molestias? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, quo perspiciatis! Optio minus nam officia officiis. Esse possimus sunt officiis nihil a unde illum? Error magnam architecto accusantium explicabo eligendi.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, molestias architecto laudantium eaque similique saepe a sint consequuntur voluptate corrupti delectus exercitationem velit doloremque harum itaque praesentium incidunt, nulla totam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt officia, delectus rerum esse veritatis ipsam porro eaque pariatur aperiam eum illo, harum doloremque voluptatum nesciunt? Rerum at repellat eos molestias? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, quo perspiciatis! Optio minus nam officia officiis. Esse possimus sunt officiis nihil a unde illum? Error magnam architecto accusantium explicabo eligendi.</p>
     </main>
 </body>
