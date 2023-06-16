@@ -4,10 +4,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Nanum Pen Script', cursive;
+    --fonte4: 'Patrick Hand', cursive;
 }
 
 * {
@@ -56,8 +59,12 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-family: var(--fonte3);
+    font-family: var(--fonte4);
     font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -68,13 +75,28 @@ section.normal {
 section.imagem {
     background-color: rgb(43, 43, 43);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);
+    background-size: cover;
 
+    /*EFEITO PARALLAX SIMPLES*/
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     display: inline-block;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.253);
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
 }
 
 footer {
